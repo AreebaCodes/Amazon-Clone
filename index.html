@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone — Shop Everything</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION BAR (rendered by script.js) -->
+    <header id="site-header"></header>
+
+    <!-- HERO BANNER -->
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on the Amazon Clone. Shop millions of products with fast local delivery.
+                <a href="search.html">Click here to browse everything</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- CATEGORY QUICK LINKS -->
+    <main class="shop-section" id="category-grid">
+        <!-- filled by home.js -->
+    </main>
+
+    <!-- TODAY'S DEALS ROW -->
+    <section class="deals-section">
+        <div class="section-heading">
+            <h2>Today's Deals</h2>
+            <a href="search.html?deals=1" class="see-more-link">See all deals</a>
+        </div>
+        <div class="deals-row" id="deals-row">
+            <!-- filled by home.js -->
+        </div>
+    </section>
+
+    <!-- RECOMMENDED / ALL PRODUCTS ROW -->
+    <section class="deals-section">
+        <div class="section-heading">
+            <h2>Recommended for you</h2>
+        </div>
+        <div class="deals-row" id="recommended-row">
+            <!-- filled by home.js -->
+        </div>
+    </section>
+
+    <!-- FOOTER (rendered by script.js) -->
+    <footer id="site-footer"></footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

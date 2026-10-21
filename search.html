@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results — Amazon Clone</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="site-header"></header>
+
+    <div class="results-banner" id="results-banner"></div>
+
+    <div class="results-layout">
+        <!-- FILTER SIDEBAR -->
+        <aside class="filters-panel">
+            <h3>Department</h3>
+            <div id="category-filters"></div>
+
+            <h3>Customer Reviews</h3>
+            <div id="rating-filters">
+                <label class="filter-row"><input type="radio" name="min-rating" value="0" checked> All ratings</label>
+                <label class="filter-row"><input type="radio" name="min-rating" value="4.5"> <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span> &amp; up</label>
+                <label class="filter-row"><input type="radio" name="min-rating" value="4"> <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span> &amp; up</label>
+            </div>
+
+            <h3>Deals &amp; Discounts</h3>
+            <label class="filter-row"><input type="checkbox" id="deal-only"> Today's Deals only</label>
+            <label class="filter-row"><input type="checkbox" id="prime-only"> Prime eligible</label>
+        </aside>
+
+        <!-- RESULTS -->
+        <section class="results-main">
+            <div class="results-toolbar">
+                <span id="result-count"></span>
+                <label>Sort by:
+                    <select id="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="rating">Avg. Customer Review</option>
+                        <option value="reviews">Newest Arrivals</option>
+                    </select>
+                </label>
+            </div>
+            <div class="results-grid" id="results-grid"></div>
+            <div class="empty-state" id="empty-state" hidden>
+                <h2>No results found</h2>
+                <p>Try checking your spelling or using more general terms.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer id="site-footer"></footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
